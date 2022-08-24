@@ -2,78 +2,89 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 
+/* Identificação: # é para id . para classe*/
+
 *{
     margin: 0 auto; 
     padding: 0;
-    box-sizing: border-box; /* padronização do calculo de largura e altura em elementos*/
-}
+    box-sizing: border-box; /* padronização do calculo de largura e altura em elementos*/}
 /*Topo da pagina - gradiente*/
 header{
     width: 100%;
-    height: 600px;
+    height: 600px;/*altura*/
     background: #1D976C; /*Gradiente*/
     background: -webkit-linear-gradient(to right, #76b852, #8DC26F);
-    background: linear-gradient(to right, #76b852, #8DC26F);
-}
-/* menu*/
+    background: linear-gradient(to right, #76b852, #8DC26F);}
+    /* Menu*/
 nav{
     text-align: right;
-    padding: 30px 50px 0px 0px;
-}
-
-nav a{
+    padding: 30px 50px 0px 0px; /*Espaçamento do menu*/}
+   nav a{
     color: beige;
-    font-weight: 00px;
     text-decoration: none;
-    margin-right: 10px;
-}
-
-nav a:hover{
-    text-decoration: underline;
-
-}
+    margin-right: 10px;} /* espaçamento entre os elementos do menu*/
+   nav a:hover{
+    text-decoration: underline;}
 /*Frases em cima do gradiente*/
 .climatetitulo {
-    display: flex;
+    display: flex; /*organização flexivel, impossibilita que ele fique mt perto do menu, se organiza como preciso*/
     height: 430px;
-    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-}
-
-.climatetitulo h1{
+    text-align: center;}
+   .climatetitulo h1{
     font-size: 90px;
-    color: #ffffff;
-}
-
-.climatetitulo h2{
+    color: #ffffff;}
+   .climatetitulo h2{
     font-size: 25px;
     font-weight: 300;
-    color: #4c7932;
-}
+    color: #4c7932;}
+/*codigo visivel além do header*/
+.conteudo {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;}
 /*Sobre o Projeto*/
 .titulo {
     color: #76b852;
     font-size: 40px;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
-/*conteudo a direita*/
-.sobreprojeto{
+   /*conteudo a direita*/
+   .conteudo-sobre-projeto{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;}
+   .ladoprojeto h3{
+    margin-bottom: 15px;}
+   .ladoprojeto h3 span{
+    border-radius: 50%;
+    background: #76b852;
+    color: #ffffff;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 10px;}
+    .ladoprojeto p{
+        padding: 0px 0px 30px 15px;}
+   #imagemprojeto{
+    width: 50%;}
+   .projeto .ladoprojeto{
+    width: 40%;
 }
+
+
 /*Sobre os Curtas Educativos*/
 .curtas{
-    text-align: center;
-}
-.curtas p{
-    margin-bottom: 30px;
-}
-.curtas h3{
+    text-align: center;}
+   .curtas p{
+    margin-bottom: 30px;}
+   .curtas h3{
     color: #81b96b;
     font-size: 25px;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
