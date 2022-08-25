@@ -1,6 +1,6 @@
 /*Importação de fontes para á pagina*/
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
 
 /* Identificação: # é para id . para classe*/
 
@@ -8,6 +8,8 @@
     margin: 0 auto; 
     padding: 0;
     box-sizing: border-box; /* padronização do calculo de largura e altura em elementos*/}
+main{
+    font-family: 'Nunito Sans', sans-serif;}
 /*Topo da pagina - gradiente*/
 header{
     width: 100%;
@@ -15,7 +17,7 @@ header{
     background: #1D976C; /*Gradiente*/
     background: -webkit-linear-gradient(to right, #76b852, #8DC26F);
     background: linear-gradient(to right, #76b852, #8DC26F);}
-    /* Menu*/
+/* Menu*/
 nav{
     text-align: right;
     padding: 30px 50px 0px 0px; /*Espaçamento do menu*/}
@@ -49,11 +51,10 @@ nav{
 /*Sobre o Projeto*/
 .titulo {
     color: #76b852;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 50px;
-}
+    margin-top: 50px;}
    /*conteudo a direita*/
    .conteudo-sobre-projeto{
     display: flex;
@@ -75,16 +76,52 @@ nav{
    #imagemprojeto{
     width: 50%;}
    .projeto .ladoprojeto{
-    width: 40%;
-}
-
-
+    width: 40%;}
 /*Sobre os Curtas Educativos*/
-.curtas{
-    text-align: center;}
+.conteudocurtas{
+    display: flex;
+    justify-content: space-evenly;}
+    .conteudocurtas .curta{
+        background: #76b852;
+        display: flex;
+        width: 50%;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;}
+        .conteudocurtas .curta iframe{
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin-left: 20px;}
+        .conteudocurtas .curta .curtatexto{
+            width: 60%;
+            color: #ffffff;
+            margin-left: 30px;
+            margin-right: 20px;}
+        .conteudocurtas .curta .curtatexto h4{
+                color: #4c7932;}
    .curtas p{
-    margin-bottom: 30px;}
+    padding-top: 15px; }
    .curtas h3{
-    color: #81b96b;
-    font-size: 25px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    text-align: center;}
+/*Sobre Criadora*/
+.conteudo-criadora{
+    margin-left: 60px;}
+   .ladocriadora h1{
+    font-size: 65px;
+    color: #76b852;
+    margin-top: 100px;}
+   #imagemcriadora{
+    width: 50%;
+    float: right;}
+   .ladocriadora h4{
+    color: #4c7932;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;}
+    .ladocriadora p{
+    margin-bottom: 8px;
+    }
