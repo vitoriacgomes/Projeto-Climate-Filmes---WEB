@@ -17,15 +17,17 @@ header{
     background: #1D976C; /*Gradiente*/
     background: -webkit-linear-gradient(to right, #76b852, #8DC26F);
     background: linear-gradient(to right, #76b852, #8DC26F);}
+
 /* Menu*/
+
 nav{
     text-align: right;
     padding: 30px 50px 0px 0px; /*Espaçamento do menu*/}
-   nav a{
+nav a{
     color: beige;
     text-decoration: none;
     margin-right: 10px;} /* espaçamento entre os elementos do menu*/
-   nav a:hover{
+nav a:hover{
     text-decoration: underline;}
 /*Frases em cima do gradiente*/
 .climatetitulo {
@@ -35,10 +37,10 @@ nav{
     justify-content: center;
     flex-direction: column;
     text-align: center;}
-   .climatetitulo h1{
+.climatetitulo h1{
     font-size: 90px;
     color: #ffffff;}
-   .climatetitulo h2{
+.climatetitulo h2{
     font-size: 25px;
     font-weight: 300;
     color: #4c7932;}
@@ -48,7 +50,9 @@ nav{
     max-width: 1500px;
     margin: auto;
     overflow: hidden;}
+
 /*Sobre o Projeto*/
+
 .titulo {
     color: #76b852;
     font-size: 45px;
@@ -56,12 +60,12 @@ nav{
     margin-bottom: 50px;
     margin-top: 50px;}
    /*conteudo a direita*/
-   .conteudo-sobre-projeto{
+.conteudo-sobre-projeto{
     display: flex;
     justify-content: space-evenly;}
-   .ladoprojeto h3{
+.ladoprojeto h3{
     margin-bottom: 15px;}
-   .ladoprojeto h3 span{
+.ladoprojeto h3 span{
     border-radius: 50%;
     background: #76b852;
     color: #ffffff;
@@ -71,57 +75,60 @@ nav{
     display: inline-block;
     padding: 2px;
     margin-right: 10px;}
-    .ladoprojeto p{
+.ladoprojeto p{
         padding: 0px 0px 30px 15px;}
-   #imagemprojeto{
+#imagemprojeto{
     width: 50%;}
-   .projeto .ladoprojeto{
+.projeto .ladoprojeto{
     width: 40%;}
+
 /*Sobre os Curtas Educativos*/
+
 .conteudocurtas{
     display: flex;
     justify-content: space-evenly;}
-    .conteudocurtas .curta{
-        background: #76b852;
-        display: flex;
-        width: 50%;
-        height: 300px;
-        align-items: center;
-        justify-content: space-evenly;
-        border-radius: 5px;}
-        .conteudocurtas .curta iframe{
-            width: 250px;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-            margin-left: 20px;}
-        .conteudocurtas .curta .curtatexto{
-            width: 60%;
-            color: #ffffff;
-            margin-left: 30px;
-            margin-right: 20px;}
-        .conteudocurtas .curta .curtatexto h4{
-                color: #4c7932;}
-   .curtas p{
+.conteudocurtas .curta{
+    background: #76b852;
+    display: flex;
+    width: 50%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;}
+.conteudocurtas .curta iframe{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-left: 20px;}
+.conteudocurtas .curta .curtatexto{
+    width: 60%;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-right: 20px;}
+.conteudocurtas .curta .curtatexto h4{
+    color: #4c7932;}
+.curtas p{
     padding-top: 15px; }
-   .curtas h3{
-    margin-bottom: 30px;
-    text-align: center;}
+.curtas h3{
+margin-bottom: 30px;
+text-align: center;}
+
 /*Sobre Criadora*/
+
 .conteudo-criadora{
     margin-left: 60px;}
-   .ladocriadora h1{
+.ladocriadora h1{
     font-size: 65px;
     color: #76b852;
     margin-top: 100px;}
-   #imagemcriadora{
+#imagemcriadora{
     width: 50%;
     float: right;}
-   .ladocriadora h4{
+.ladocriadora h4{
     color: #4c7932;
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 20px;}
-    .ladocriadora p{
-    margin-bottom: 8px;
-    }
+.ladocriadora p{
+    margin-bottom: 8px;}
