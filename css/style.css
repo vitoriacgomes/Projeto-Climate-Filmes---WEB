@@ -16,19 +16,29 @@ header{
     height: 600px;/*altura*/
     background: #1D976C; /*Gradiente*/
     background: -webkit-linear-gradient(to right, #76b852, #8DC26F);
-    background: linear-gradient(to right, #76b852, #8DC26F);}
+    background: linear-gradient(to right, #76b852, #8DC26F);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
 
 /* Menu*/
 
-nav{
+#MenuPrincipal{
     text-align: right;
-    padding: 30px 50px 0px 0px; /*Espaçamento do menu*/}
-nav a{
+    padding: 30px 50px 0 0; /*Espaçamento do menu*/}
+#MenuPrincipal a{
     color: beige;
+    font-weight: 300;
     text-decoration: none;
     margin-right: 10px;} /* espaçamento entre os elementos do menu*/
 nav a:hover{
     text-decoration: underline;}
+.onda{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 /*Frases em cima do gradiente*/
 .climatetitulo {
     display: flex; /*organização flexivel, impossibilita que ele fique mt perto do menu, se organiza como preciso*/
@@ -76,11 +86,11 @@ nav a:hover{
     padding: 2px;
     margin-right: 10px;}
 .ladoprojeto p{
-        padding: 0px 0px 30px 15px;}
+        padding: 0px 0px 30px 15px;
+        font-weight: 300;
+        text-align: justify;}
 #imagemprojeto{
     width: 50%;}
-.projeto .ladoprojeto{
-    width: 40%;}
 
 /*Sobre os Curtas Educativos*/
 
@@ -164,3 +174,46 @@ footer{
     color: #375724;
 }
 
+
+/*Responsividade*/
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .conteudo-sobre-projeto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projeto .ladoprojeto{
+        width: 90%;
+    }
+    #imagemprojeto{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+    .conteudocurtas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudocurtas .curta{
+        width: 90%;
+        
+    }
+    .conteudocurtas .curta iframe{
+        width: 30%;
+    }
+    .conteudo-criadora{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-criadora .ladocriadora{
+        width: 90%;
+    }
+    #imagemcriadora{
+        width: 110%;
+    }
+}
